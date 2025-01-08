@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tickets</title>
+</head>
+<body>
+    <h1>Tickets</h1>
+    <ul>
+        {% for ticket in tickets %}
+            <li>
+                <a href="{% url 'ticket_detail' ticket.id %}">
+                    Ticket #{{ ticket.id }} - {{ ticket.title }}
+                </a>
+                ({{ "Resolved" if ticket.is_resolved else "Open" }})
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

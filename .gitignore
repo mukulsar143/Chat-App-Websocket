@@ -1,0 +1,40 @@
+# Byte-compiled files
+*.pyc
+*.pyo
+__pycache__/
+
+# Virtual environment
+env/
+venv/
+my_env/  # Replace with your virtual environment folder name
+
+# Django migrations
+**/migrations/
+!**/migrations/__init__.py
+
+# SQLite database file
+*.sqlite3
+
+# Logs and debug output
+*.log
+logs/
+
+# Media and static files
+media/
+staticfiles/
+
+# IDE and editor settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node.js dependencies (if applicable)
+node_modules/
+
+# Compiled files and caches
+.DS_Store
+Thumbs.db
+
+# Git files
+*.orig
